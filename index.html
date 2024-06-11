@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // Save scroll position before page unloads
+        window.addEventListener('beforeunload', function() {
+            localStorage.setItem('scrollPosition', window.scrollY);
+        });
+
+        // Restore scroll position when page loads
+        window.addEventListener('load', function() {
+            const scrollPosition = localStorage.getItem('scrollPosition');
+            if (scrollPosition) {
+                window.scrollTo(0, parseFloat(scrollPosition));
+            }
+        });
+    </script>
+    <link rel="stylesheet" href="./port_header.css">
+    <link rel="stylesheet" href="./port_root.css">
+</head>
+<body class="container">
+
+<main class="main">
+
+    <!-- navigation start -->
+    <section>
+        <div class="menu">
+            <div class="header">
+                <h1>Mahit's Bio</h1>
+            </div>
+            <div class="menu-bar">
+                <div>
+                    <h1 class="home ">Home</h1>
+                </div>
+                <div>
+                    <h1 class="about">About</h1>
+                </div>
+                <div>
+                    <h1 class="proj">Projects</h1>
+                </div>
+                <div>
+                    <h1 class="contact ">Contact</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- navigation end -->
+
+    <!-- Profile and info start -->
+    <div class="profile">
+        <div class="profile-info">
+            <h1>Hi,</h1>
+            <h2>I'm Al-Muktadir Islam Mahit, a CSE student, deeply passionate about <span class="bolder"> sports programming</span> and <span class="bolder">software development.</span> <br> <span class="address">Dhaka, Bangladesh.</span></h2>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/al-muktadir-islam-mahit-65b090294/" ><img src="./image/linkedin.png" alt="LinkedIn" class="linkedin"></a>
+                <a href="#" ><img src="./image/github.png" alt="GitHub" class="github"></a>
+                <a href="https://www.facebook.com/profile.php?id=100004576457169" ><img src="./image/Facebook-Logo.png" alt="Facebook" class="facebook"></a>
+                <a href="https://codeforces.com/profile/Ethical_Mahit" ><img src="./image/Codeforces_logo.png" alt="Codeforces" class="codeforces"></a>
+            </div>
+        </div>
+        <div class="profile-pic">
+            <img src="./image/mahit.jpg" alt="Profile Picture">
+        </div>
+    </div>
+    <!-- Profile and info end -->
+
+    <!-- tech stack starts -->
+    <section class="tech-stack">
+        <h3>Tech Stack</h3>
+        <div class="stack-icons">
+            <img src="./image/HTML5_logo.png" alt="HTML">
+            <img src="./image/CSS3_logo.png" alt="CSS">
+            <img src="./image/JavaScript-logo.png" alt="JavaScript">
+            <img src="./image/cpp_logo.png" alt="Cpp">
+            <img src="./image/Java_logo.jpg" alt="Java">
+            <img src="./image/Python-logo.png" alt="Python">
+        </div>
+    </section>
+    <!-- tech stack ends -->
+
+    <!-- About me starts -->
+    <section class="about-me">
+        <h2 class="title">About Me</h2>
+        <div class="content">
+            <div class="profile-picture">
+                <!-- <img src="./image/rsz_man_pointing_something.jpg" alt="Profile Picture"> -->
+            </div>
+            <div class="info">
+                <div class="info-card experience">
+                    <h3>Experience</h3>
+                    <p class="exp">
+                        <ul>
+                            <li>1+ Years of Web-Development</li>
+                            <br>
+                            <li>3+ Years worked on Robotics</li>
+                            <br>
+                            <li>Former BNCC Cadet</li>
+                            <br>
+                            <li>Sports Programmer</li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="info-card education">
+                    <h3>Education</h3>
+                    <p class="edu">B.Sc. in Computer Science & Engineering</p>
+                </div>
+                <div class="info-card skill">
+                    <h3>Skills</h3>
+                    <p class="skil">C++, Java, Python, MERN Stack <br>& Robotics </p>
+                </div>
+            </div>
+        </div>
+        <p class="description">
+            Hello! I'm Al-Muktadir Islam Mahit, a dedicated Computer Science and Engineering (CSE) student with a profound passion for sports programming and software development. Over the past year, I have honed my skills in web development, building dynamic and responsive websites that cater to various needs. My journey in technology extends beyond web development; I have also immersed myself in the field of robotics, gaining over three years of experience in designing and programming autonomous systems. <br> <br> Living in Dhaka, Bangladesh, I thrive in a vibrant community that continuously fuels my drive for innovation and excellence. Whether it's tackling complex algorithms in competitive programming or creating innovative software solutions, my goal is to leverage technology to make a meaningful impact.
+        </p>
+    </section>
+    <div class="cv">
+        <a href="https://blue-leila-43.tiiny.site" target="_blank">Download CV</a>
+        <!-- <a href="link-to-live-demo" target="_blank">Live Demo</a> -->
+    </div>
+    <!-- About me ends -->
+
+    <!-- Projects starts -->    
+    <section class="projects">
+        <h1 style="text-align: left; font-size: 50px; margin-bottom: 60px;">My Projects -</h1>
+        <div class="project">
+            <div class="project-image">
+                <img src="./image/Project_Robot_croped.jpg" alt="Military Bot image">
+            </div>
+            <div class="project-description">
+                <h3>Military Spy Bot</h3>
+                <p>A robot, which can be controlled wirelessly & can be  used as a spy against the terrorist. It has capabilities to deactivate bombs safely, detect landmines, spy-Camera, strong radar system & check for poisonous gas.</p>
+                <br>
+                <p>Technologies: C++, Arduino, ESP32 cam, Sensor, Bluetooth module</p>
+                <div class="project-links">
+                    <a href="https://docs.google.com/document/d/1jYY-T1z2h5CSn3PKItNTCAipuXOVMPKddOI7tp6COKg/edit?usp=sharing" target="_blank">Detailed Info</a>
+                    <!-- <a href="link-to-live-demo" target="_blank">Live Demo</a> -->
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <div class="project reverse">
+            <div class="project-description">
+                <h3>My achievement</h3>
+                <p>I have provided my achievements/awards certificate in below link. Moreover,</p>
+                <br>
+                <ul>
+                    <li>Ranked <b> 23th </b> in Coding competition for Junios (held by UIU - Online) <br> --- 30-11-23</li>
+                    <br>
+                    <li>Ranked <b> 7th </b> in Code of Clash Programming Contest (held by UIU - Onsite)<br> --- 07-02-24</li>
+                    <br>
+                    <li>Ranked <b> 13th </b> in UIU Advanced selection contest - Onsite <br> --- 16-02-24</li>
+                </ul>
+                <br>
+                <!-- <p>Technologies: React, SCSS</p> -->
+                <div class="project-links">
+                    <a href="https://docs.google.com/document/d/1sOdx-jCPjKnSZif6VaE4pHi3d9YsSOCphCz-5Z68SUI/edit?usp=sharing" target="_blank">Extracurricular Certificates</a>
+                    <!-- <a href="link-to-live-demo" target="_blank">Live Demo</a> -->
+                </div>
+            </div>
+            <div class="project-image">
+                <img src="./image/certificates/all_certificate_transparent_cutted.png" alt="All_Certificate">
+            </div>
+        </div>
+        <hr>
+
+        <div class="project">
+            <div class="project-image">
+                <img src="./image/certificates/all_publication.png" alt="My Publication">
+            </div>
+            <div class="project-description">
+                <h3>My Publication</h3>
+                <p>In celebration of the 50th anniversary of Singra Police Station, situated in Natore, the authorities published a commemorative book featuring rhymes, short stories, and other writings by various police officers. I contributed a documentary story highlighting the patriotism and dedication of the police force. As the son of a police officer, I was inspired to share an authentic narrative that resonated with many readers, receiving positive feedback for its heartfelt portrayal of police work.</p>
+                <br>
+                <div class="project-links">
+                    <a href="https://docs.google.com/document/d/105448CZ1HT0Y0iR8vfoWouDzBN7dneMhMgGlRtbUsAc/edit?usp=sharing" target="_blank">Full view</a>
+                    <!-- <a href="link-to-live-demo" target="_blank">Live Demo</a> -->
+                </div>
+            </div>
+        </div>
+    </section>    
+    <!-- Projects ends -->
+</main>
+
+    <!-- Contact me starts -->
+    <section class="contact-me">
+        <div class="contact-info">
+            <h2>Contact Me</h2>
+            <p>If you have any query about my project or want to work with me, feel free to get in touch with me with any questions you may have!</p>
+            <br>
+            <p>Email: muktadirmahit07@gmail.com</p>
+            <p>Phone: 01714-068182</p>
+        </div>
+        <div class="visit-us">
+            <h2>Visit My Place</h2>
+            <p>Mon-Thu 10:00am - 8:00pm<br>Friday 10:00am - 8:00pm<br>Saturday 10:00am - 7:00pm<br>Sunday 12:00pm - 5:00pm</p>
+            <br>
+            <p> <i> (--Above part is just a template--) </i></p>
+            <br>
+            <p>B.Sc. in Computer Science & Engineering <br> United International University<br>Dhaka, Bangladesh</p>
+        </div>
+        <div class="contact-form">
+            <h2>Get in Touch</h2>
+            <form action="#" method="post">
+                <input type="text" name="first_name" placeholder="First Name" required>
+                <input type="text" name="last_name" placeholder="Last Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="text" name="phone" placeholder="Phone" required>
+                <textarea name="message" placeholder="Type your message here..." required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+    <!-- Contact me ends -->
+    
+</body>
+</html>
